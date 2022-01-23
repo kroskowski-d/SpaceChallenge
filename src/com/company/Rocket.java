@@ -21,11 +21,12 @@ public class Rocket implements SpaceShip{
 
     @Override
     public boolean canCarry(Item item) {
-        return this.currentWeight + item.weight < maxWeight;
+        return this.currentWeight + item.weight <= maxWeight;
     }
 
     @Override
     public double carry(Item item) {
-        return this.currentWeight += item.weight;
+        this.currentWeight += item.weight;
+        return this.currentWeight;
     }
 }
