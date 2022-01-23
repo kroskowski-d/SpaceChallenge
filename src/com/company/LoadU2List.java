@@ -11,10 +11,9 @@ public class LoadU2List {
         for (Item item : loadItems){
             while (!rocket.canCarry(item)){ // check if rocket can carry items
                 rocketList.add(rocket); // add rocket to list
-                rocket = new U2();
+                rocket = new U2(); // create new rocket
             }
             rocket.carry(item);
-            //System.out.println("Item: "+item.name +" "+item.weight +" added to rocket list");
 
         }
         return rocketList;

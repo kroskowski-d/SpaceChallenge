@@ -16,8 +16,6 @@ public class LoadU1List {
                 rocket = new U1(); //create new rocket
             }
             rocket.carry(item); //add item to rocket
-            //System.out.println("Item: "+item.name +" "+item.weight +" added to rocket list");
-
         }
         return rocketList;
     }
